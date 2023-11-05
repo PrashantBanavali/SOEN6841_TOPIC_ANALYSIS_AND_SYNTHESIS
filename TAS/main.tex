@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[table]{xcolor}
+\usepackage[font=small,labelfont=bf]{caption} 
+\definecolor{blue}{HTML}{7acff5}
+\definecolor{maroon}{HTML}{800000}
+\graphicspath{ {images/} }
+\date{null}
+\usepackage[colorlinks=true,urlcolor=maroon]{hyperref}
+\usepackage{fullpage} % changes the margin
+\usepackage{longtable}
+\usepackage{caption}
+\renewcommand*\contentsname{Table of Contents}
+\addtolength{\topmargin}{-2.25in}
+\begin{document}
+\input{TitlePage}
+\hypersetup{linkcolor=maroon}
+\tableofcontents
+\input{Pages/Page1}
+\newpage
+{\small
+\bibliographystyle{TAS/Resources/ieee_fullname}
+\bibliography{TAS/Resources/references}
+}
+\end{document}
